@@ -15,9 +15,10 @@ const App: React.FC = () => {
       </header>
       <main>
         <form
-          onSubmit={e => {
+          onSubmit={async e => {
             e.preventDefault();
-            selectedProblem && setOutput(problems[selectedProblem](input));
+            selectedProblem &&
+              setOutput(await problems[selectedProblem](input));
           }}
         >
           <label htmlFor="problem">Problem</label>

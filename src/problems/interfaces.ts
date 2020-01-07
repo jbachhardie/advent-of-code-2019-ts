@@ -1,3 +1,3 @@
 export interface ProblemFunction {
-  (input: string): string;
+  (input: string): Promise<string>;
 }

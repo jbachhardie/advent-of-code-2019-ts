@@ -4,7 +4,7 @@ const calculateFuelRequirement = (mass: number) => {
   return Math.floor(mass / 3) - 2;
 };
 
-export const day1part1: ProblemFunction = input => {
+export const day1problem1: ProblemFunction = async input => {
   return input
     .split('\n')
     .filter(Boolean)
@@ -27,7 +27,7 @@ const additionalFuelRequired = (initialFuelRequirements: number[]) => {
   }
 };
 
-export const day1part2: ProblemFunction = input => {
+export const day1problem2: ProblemFunction = async input => {
   const fuelRequirements = input
     .split('\n')
     .filter(Boolean)
